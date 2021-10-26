@@ -1,0 +1,42 @@
+body{
+    background-color: hsl(198,50%,85%);
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    background-color: hsl(198, 50%, 50%);
+    font-size:30px;
+}
+
+h3{
+    color: white;
+    background-color:hsl(198, 50%, 65%);
+    font-size: 23px;
+}
+pre{
+    
+    background-color: white;
+    font-family: bold;
+}
+
+address{
+    display: block;
+    font-family: serif;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
