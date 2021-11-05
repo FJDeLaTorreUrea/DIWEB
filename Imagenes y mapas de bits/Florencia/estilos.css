@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    background-color: hsl(67, 10%, 75%);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+h1{
+    color: hsl(240, 65%, 25%);
+    letter-spacing: 50px;
+    font-weight: 900;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+h2{
+    clear: both;
+  background-color: hsl(68, 30%, 30%);
+  color: white;
+}
+
+img.izquierda{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p.centrado{
+    text-align: center;
+}
+
+img.derecha{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+strong{
+    font-style: italic;
+}
+
+address{
+    clear: both;
+    font-size: 80%;
+}
