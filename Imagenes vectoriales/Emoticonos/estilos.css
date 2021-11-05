@@ -1,0 +1,28 @@
+body{
+    background-color: hsl(45, 95%, 95%);
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 0 20%;
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    clear: both;
+}
+
+p.centrado{
+    text-align: center;
+}
+
+hr{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 5px;
+    color: black;
+}
