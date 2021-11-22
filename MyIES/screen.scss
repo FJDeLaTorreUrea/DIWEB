@@ -1,0 +1,40 @@
+$font-color:#eee;
+$font-color-hover:#fff;
+$background-color:#666;
+$backgorund-color-hover:#888;
+
+
+
+@mixin colores{
+    color: $font-color;
+    background-color:$background-color;
+}
+
+@mixin colores-hover{
+    &:hover
+    {
+        color: $font-color-hover;
+        background-color: $backgorund-color-hover;
+    }
+}
+
+@mixin box-sizing($tam){
+        box-sizing:$tam;
+}
+
+@mixin tamaño($largo,$ancho)
+{
+    height:$largo;
+    width:$ancho;
+}
+
+@mixin transiciones($property,$duration,$timing:linear){
+    transition:$property $duration $timing;
+}
+
+@mixin animaciones($name,$duration,$timing)
+{
+    animation: $name $duration $timing;
+}
+
+@import "_menu.scss";
