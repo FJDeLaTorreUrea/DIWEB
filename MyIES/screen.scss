@@ -20,6 +20,9 @@ $backgorund-color-hover:#888;
 
 @mixin box-sizing($tam){
         box-sizing:$tam;
+        -webkit-box-sizing: $tam;
+        -moz-box-sizing: $tam;
+        
 }
 
 @mixin tamaño($largo,$ancho)
@@ -29,12 +32,41 @@ $backgorund-color-hover:#888;
 }
 
 @mixin transiciones($property,$duration,$timing:linear){
+
     transition:$property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    
 }
 
 @mixin animaciones($name,$duration,$timing)
 {
+    
+    -moz-animation: $name $duration $timing;
+    -webkit-animation: $name $duration $timing;
     animation: $name $duration $timing;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    @include colores;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    padding: 12px 30px;
+}
 @import "_menu.scss";
+
+footer{
+    @include colores;
+    @include box-sizing(border-box);
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+
+}

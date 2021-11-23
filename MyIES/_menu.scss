@@ -1,16 +1,21 @@
-header{
-    @include colores;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #aaa;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
-    padding: 12px 30px;
+@keyframes iluminar {
+    from {
+        background-color: #666;
+        color: #eee;
+    }
+    to {
+        background-color: #888;
+        color: #fff;
+    }
 }
+
+
 
 
 nav{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+        position: absolute;
     a{
         @include colores;
         @include colores-hover;
@@ -19,57 +24,63 @@ nav{
         padding: 7px 20px;
         text-align: center;
         cursor: pointer;
+        
+        &:hover{
+            @include colores-hover;
+         @include animaciones(iluminar,0.4,linear);
+        }
+    
+    
     }
 
-    a:hover{
-        @include colores-hover;
-        @include animaciones(iluminar,0.4,linear);
-    }
+ 
     
     ul{
         @include colores;
-        @include colores-hover;
+        
         margin:0px;
         padding: 0px;
-    }
-
-    nav>ul{
-        @include tamaño(32px,100%);
-    }
-
-    ul.submenu{
-        @include transiciones(height,0.5,ease-out);
-        overflow: hidden;
-        position: absolute;
-        height: 0;
-    }
+        list-style-type: none;
     
+        .submenu{
+            @include transiciones(height,0.5,ease-out);
+            overflow: hidden;
+            position: absolute;
+            height: 0;
+        }
+    
+    }
+
+    >ul{
+        @include tamaño(32px,100%);
+        @include colores;
+    }
+
     li.categoria{
         float: left;
 
-    }
-    li.categoria>a{
-        @include transiciones(padding,0.4,ease-out);
-    }
+        >a{
+            @include transiciones(padding,0.4,ease-out);
+            &:hover{
+                padding: 10px 20px;
+            }
+        }
+        &:hover ul.submenu
+        {
+            height: 100px;
+        }
 
-    li.categoria>a:hover{
-        padding: 10px 20px;
     }
+    
 
-    li.categoria:hover ul.submenu {
-        height: 100px;
-    }
+    
+
+    
 
 
     
 }
-footer{
-    @include colores;
-    @include colores-hover;
-    @include box-sizing(border-box);
-    position:absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 5px;
 
-}
+
+
+

@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   color: #eee;
   background-color: #666;
@@ -8,9 +13,32 @@ header {
   padding: 12px 30px;
 }
 
+@-webkit-keyframes iluminar {
+  from {
+    background-color: #666;
+    color: #eee;
+  }
+  to {
+    background-color: #888;
+    color: #fff;
+  }
+}
+
+@keyframes iluminar {
+  from {
+    background-color: #666;
+    color: #eee;
+  }
+  to {
+    background-color: #888;
+    color: #fff;
+  }
+}
+
 nav {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  position: absolute;
 }
 
 nav a {
@@ -30,7 +58,7 @@ nav a:hover {
 
 nav a:hover {
   -webkit-animation: iluminar 0.4 linear;
-          animation: iluminar 0.4 linear;
+  animation: iluminar 0.4 linear;
 }
 
 nav a:hover:hover {
@@ -43,24 +71,23 @@ nav ul {
   background-color: #666;
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
-nav ul:hover {
-  color: #fff;
-  background-color: #888;
-}
-
-nav nav > ul {
-  height: 32px;
-  width: 100%;
-}
-
-nav ul.submenu {
-  -webkit-transition: height 0.5 ease-out;
+nav ul .submenu {
   transition: height 0.5 ease-out;
+  -moz-transition: height 0.5 ease-out;
+  -webkit-transition: height 0.5 ease-out;
   overflow: hidden;
   position: absolute;
   height: 0;
+}
+
+nav > ul {
+  height: 32px;
+  width: 100%;
+  color: #eee;
+  background-color: #666;
 }
 
 nav li.categoria {
@@ -68,8 +95,9 @@ nav li.categoria {
 }
 
 nav li.categoria > a {
-  -webkit-transition: padding 0.4 ease-out;
   transition: padding 0.4 ease-out;
+  -moz-transition: padding 0.4 ease-out;
+  -webkit-transition: padding 0.4 ease-out;
 }
 
 nav li.categoria > a:hover {
@@ -83,16 +111,12 @@ nav li.categoria:hover ul.submenu {
 footer {
   color: #eee;
   background-color: #666;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
   position: absolute;
   width: 100%;
   bottom: 0;
   padding: 5px;
-}
-
-footer:hover {
-  color: #fff;
-  background-color: #888;
 }
 /*# sourceMappingURL=screen.css.map */
