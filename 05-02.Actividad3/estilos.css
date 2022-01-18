@@ -1,0 +1,121 @@
+@media (max-width:576px)
+{
+    #header{
+        background-color: #FEB385;
+        text-align: center;
+    }
+    #uno{
+        text-align: left;
+        background-color: red;
+        height: 300px;
+    }
+    #dos{
+        background-color: #2DFFFF;
+        text-align: center;
+        height: 300px;
+    }
+    #tres{
+        text-align: right;
+        background-color: red;
+        height: 300px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px)
+{
+    #header{
+        background-color: #2DFFFF;
+        text-align: left;
+    }
+    #uno{
+        text-align: left;
+        background-color: red;
+    }
+    #dos{
+        background-color: red;
+        text-align: right;
+    }
+    #tres{
+        text-align: center;
+        background-color: limegreen;
+        height: 200px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media (min-width:768px)
+{
+    #header{
+        background-color: limegreen;
+        text-align: left;
+    }
+    #uno{
+        text-align: center;
+        background-color: red;
+        height: 500px;
+    }
+    #dos{
+        background-color: red;
+        text-align: center;
+        height: 500px;
+    }
+    #tres{
+        text-align: center;
+        background-color: red;
+        height: 500px;
+    }
+    #footer1{
+        text-align: right;
+    }
+    #footer2{
+        text-align: left;
+    }
+}
+
+
+
+div{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+#header{
+    height: 70px;
+    
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#uno{
+    height: 500px;
+    
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#dos{
+    height: 500px;
+    
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#tres{
+    height: 500px;
+    
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.footer{
+    height: 70px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 10px;
+}
