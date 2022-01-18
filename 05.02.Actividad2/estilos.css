@@ -1,0 +1,46 @@
+
+
+#header{
+    background-color: limegreen;
+    height: 50px;
+    border: 1px solid black;
+    margin:10px;
+}
+
+.azulillos{
+    background-color: lightblue;
+    height:150px;
+    border:1px solid black;
+    margin: 10px;
+}
+
+.grises{
+    background-color: lightgray;
+    height:150px;
+    border:1px solid black;
+    margin: 10px;
+}
+
+.dispositivo
+{
+    background-color: mediumturquoise;
+    height: 70px;
+    border: 1px solid black;
+    margin:10px;
+}
+
+.naranjas
+{
+    background-color: orange;
+    height: 150px;
+    border: 1px solid black;
+    margin:10px;
+}
+
+#footer
+{
+    background-color: limegreen;
+    height: 40px;
+    border: 1px solid black;
+    margin:10px;
+}
