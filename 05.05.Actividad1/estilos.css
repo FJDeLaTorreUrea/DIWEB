@@ -1,0 +1,24 @@
+#anotacion{
+    background-color: #17A2B8;
+}
+h1{
+    text-align: center;
+}
+form{
+    border: 1px solid blue;
+    padding: 10px;
+}
+input
+{
+    margin: 5px;
+}
+
+#formu
+{
+    background-color: #343A40;
+    color: white;
+}
+
+button{
+    text-align: right;
+}
